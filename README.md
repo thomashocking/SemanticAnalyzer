@@ -6,5 +6,4 @@ The controlled vocabulary database can be modified by users but it has default s
 # TODO
 - Parse text file
 - Create Controlled Vocablary database
-- Connect to Internet controlled Vocabloary site > Get Data
-- 
+- Connect to Internet controlled Vocabloary site and Get Data
