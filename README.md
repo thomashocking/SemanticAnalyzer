@@ -8,5 +8,5 @@ Semantic Analyzer is a natural language processing program.
 - Connect to Internet controlled Vocabloary site and Get Data
 
 # IDEA
-> Collect Search Result and Analyze it in terms of easy and important information. Reorganize the search result.
-> Extract important sentences from License Agreenment
+1. Collect Search Result and Analyze it in terms of easy and important information. Reorganize the search result.
+2. Extract important sentences from License Agreenment
