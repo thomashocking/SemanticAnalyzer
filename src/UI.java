@@ -1,5 +1,5 @@
 
-public class test {
+public class UI {
 	public void main(String[] args){
 		
 	}
