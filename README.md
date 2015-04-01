@@ -19,23 +19,23 @@ It analyzes a text format file. Then extract the significant sentences from the 
 ---
 
 # Class Definition
-- **parseSource**
+- **parseSource** INITAL
 
 "parseSource" is a main class. It deals with processed value, String. The String is already process by Process<Resource>(text, HTML, Search) class. So, what this class do is parsing String into sentences. And reorganize sentences followed by each sentence's priority. Then return sentences to UI.
 
-- **Sentence**
+- **Sentence** INITAL
 
 "Sentence" is a semantic token. It has priority and words. It calculates its priority by words. and store the original sentence in it. It can return its priority and the original sentence.
 
-- **Word**
+- **Word** INITIAL
 
 "Word" is a minimum token, which means it does not have meaning itself, but it has priority in order to calculate sentence's priority. it returns priority and word.
 
-- **ProcessText**
+- **ProcessText** INITAL
 
-"ProcessText" is a processing class. It takes text file from UI(User) and make it into one large string and pass to "ParseSource".
+"ProcessText" is a processing class. It takes text file from UI(User) and make it into one large string and pass to UI and then UI pass String to "ParseSource".
 
-- **Voca**
+- **Voca** INITIAL
 
 "Voca" is a database class. It communicate with database and help to compare a sentence's words to controlled vocabulary. And return word's priority. 
 
