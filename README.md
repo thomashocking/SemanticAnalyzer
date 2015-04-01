@@ -7,8 +7,11 @@ It analyzes a text format file. Then extract the significant sentences from the 
 ---
 
 # TODO
-- Parse text file
-- Create Controlled Vocabulary database
+- Create Controlled Vocabulary database by referencing outside database
+- Create logical database schema and implement it
+- Use [Thesaurus](http://www.thesaurus.com) to find related controlled vocabulary
+- [Thesaurus](http://www.thesaurus.com) has its own Complexity checker!
+- Create UI System
 
 ---
 
