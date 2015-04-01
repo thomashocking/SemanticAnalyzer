@@ -19,13 +19,11 @@ public class ParseSource {
 		}
 		return temp;
 	}
-	//TODO:
-	//Sorting algorithm does not work!
 	public void sort(){
 		for(int index=1; index<sentences.size();index++){
 			Sentence temp=sentences.get(index);
 			int aux=index-1;
-			while((aux>=0)&&(sentences.get(index).getPriority()<temp.getPriority())){
+			while((aux>=0)&&(sentences.get(aux).getPriority()<temp.getPriority())){
 				sentences.set(aux+1, sentences.get(aux));
 				aux--;
 			}
