@@ -18,6 +18,7 @@ It analyzes a text format file. Then extract the significant sentences from the 
 # IDEA
 1. Collect Search Result and Analyze it in terms of easy and important information. Reorganize the search result.
 2. Extract important sentences from License Agreement.
+3. Easy Text : Word's difficulty, How many important sentence are there(ratio),  
 
 ---
 
