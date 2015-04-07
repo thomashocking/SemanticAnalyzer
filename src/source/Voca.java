@@ -44,4 +44,13 @@ public class Voca {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void clearWord(){
+		try {
+			db.executeSql("TRUNCATE words");
+		} catch (SQLException e) {
+			//Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

@@ -7,6 +7,7 @@ public class ParseSource {
 	ArrayList<Sentence> sentences;
 	
 	public ParseSource(String text){
+		System.out.println("<ParseSource>");
 		sentences=this.parseText(text);
 		this.sort();
 	}

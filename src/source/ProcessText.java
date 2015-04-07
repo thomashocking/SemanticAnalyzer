@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class ProcessText {
 	public static String getString(){
+		System.out.println("<ProcessText>");
 		String text="";
 		Scanner stdIn=new Scanner(System.in);
 		System.out.print("Where is the file? ");

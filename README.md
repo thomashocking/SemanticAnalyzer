@@ -7,10 +7,10 @@ It analyzes a text format file. Then extract the significant sentences from the 
 ---
 
 # TODO
-- Create Controlled Vocabulary database by referencing outside database
-- Create logical database schema and implement it
-- Use [Thesaurus](http://www.thesaurus.com) to find related controlled vocabulary
+- Study 'Natural language processing' and make computer understand 'context' of text
+- add 'processHTML'
 - [Thesaurus](http://www.thesaurus.com) has its own Complexity checker!
+- Organize text by priority(+) and complexity(-)
 - Create UI System
 
 ---
@@ -48,6 +48,12 @@ It analyzes a text format file. Then extract the significant sentences from the 
 - **UI**
 
 "UI" is a graphic class and interface with users. It asks what type of source gone a use, help to insert controlled vocabulary into database. and return the result in text format with sentence priority notification.
+
+- **Crawler** INITIAL
+
+"Crawler" is a collecting class. It get a user's word and insert synonyms to database with set priority. This uses [Thesaurus](http://www.thesaurus.com) database to collect synonyms. 
+
+And it could used for check a source's complexity in the future.
 
 ---
 

@@ -15,7 +15,6 @@ public class DB {
 			Class.forName("com.mysql.jdbc.Driver"); //check existence of jdbc.Driver
 			String url = "jdbc:mysql://localhost:3306/voca"; //connection url
 			conn = DriverManager.getConnection(url, "root", "wlfka102"); //init Connection
-			System.out.println("conn built"); //confirm
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
