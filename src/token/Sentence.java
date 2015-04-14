@@ -35,6 +35,6 @@ public class Sentence {
 	}
 	@Override
 	public String toString(){
-			return origin.trim()+".\n";
+			return priority+" - "+origin.trim()+".\n";
 	}
 }

@@ -7,11 +7,30 @@ It analyzes a text format file. Then extract the significant sentences from the 
 ---
 
 # TODO
-- Study 'Natural language processing' and make computer understand 'context' of text
+- Study 'Natural language processing'
 - add 'processHTML'
-- [Thesaurus](http://www.thesaurus.com) has its own Complexity checker!
-- Organize text by priority(+) and complexity(-)
 - Create UI System
+
+- ##Future Function!##
+	- Source's complexity Checker!
+	- Need Professional Help.
+		* How does people decide which source is more harder than other.
+		* What standard could be used to check sentence's complexity.
+		 
+- ##INSIDE##
+	* More Efficiently arrange sentences (Paragraph&Sentence = Tree, Word = HashMap<K=word,V=priority, complexity>)
+	
+---
+
+#ASSUMPTION
+
+- MySQL database exist
+- Internet connection
+- Pre-defined synonym vocabulary list = [Thesaurus](http://www.thesaurus.com)
+- Source file should be text and well structured (Pharagraph>Sentence>Word)
+- Higher priority sentence will use user-selected words more than Lower priority sentence.
+- 'Context' will be contained in the same paragraph. (Related or Not)
+
 
 ---
 
@@ -26,6 +45,10 @@ It analyzes a text format file. Then extract the significant sentences from the 
 - **parseSource** INITAL
 
 "parseSource" is a main class. It deals with processed value, String. The String is already process by Process<Resource>(text, HTML, Search) class. So, what this class do is parsing String into sentences. And reorganize sentences followed by each sentence's priority. Then return sentences to UI.
+
+- **Paragraph** INITIAL
+
+"Paragraph" is a semantic token. It has priority and sentences. It calculates its priority from sentences. It is reorganized according to sentence's priority. 
 
 - **Sentence** INITAL
 

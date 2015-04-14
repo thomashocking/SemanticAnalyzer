@@ -5,6 +5,7 @@ import source.ProcessText;
 import source.Voca;
 import token.Word;
 import setup.Crawler;
+import java.util.ArrayList;
 
 public class UI {
 	public static void main(String[] args){
@@ -16,7 +17,7 @@ public class UI {
 			e.printStackTrace();
 		}
 		
-		String text=ProcessText.getString();
+		ArrayList<String> text=ProcessText.getString();
 		ParseSource source=new ParseSource(text);
 		System.out.println(source.toString());
 		
